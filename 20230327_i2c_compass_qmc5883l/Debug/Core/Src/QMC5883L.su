@@ -1,0 +1,6 @@
+../Core/Src/QMC5883L.c:11:6:compass_WriteReg	32	static
+../Core/Src/QMC5883L.c:17:6:compass_init	8	static
+../Core/Src/QMC5883L.c:27:6:compass_setMode	24	static
+../Core/Src/QMC5883L.c:32:6:compass_softReset	8	static
+../Core/Src/QMC5883L.c:36:6:compass_read	48	static
+../Core/Src/QMC5883L.c:57:6:tout_read	40	static
