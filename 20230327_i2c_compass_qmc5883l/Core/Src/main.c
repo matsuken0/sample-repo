@@ -112,6 +112,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 	  uint16_t x,y,z;
 	  uint16_t t;
+	  uint8_t abc;
 
 
 	  compass_read(&x,&y,&z);

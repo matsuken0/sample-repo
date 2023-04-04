@@ -60,8 +60,8 @@ all: main-build
 main-build: 20230327_i2c_compass_qmc5883l.elf secondary-outputs
 
 # Tool invocations
-20230327_i2c_compass_qmc5883l.elf 20230327_i2c_compass_qmc5883l.map: $(OBJS) $(USER_OBJS) C:\Users\user\STM32CubeIDE\workspace_1.12.0\20230327_i2c_compass_qmc5883l\STM32F303K8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "20230327_i2c_compass_qmc5883l.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\user\STM32CubeIDE\workspace_1.12.0\20230327_i2c_compass_qmc5883l\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20230327_i2c_compass_qmc5883l.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+20230327_i2c_compass_qmc5883l.elf 20230327_i2c_compass_qmc5883l.map: $(OBJS) $(USER_OBJS) C:\Users\user\sample-repo\20230327_i2c_compass_qmc5883l\STM32F303K8TX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "20230327_i2c_compass_qmc5883l.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\user\sample-repo\20230327_i2c_compass_qmc5883l\STM32F303K8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="20230327_i2c_compass_qmc5883l.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
