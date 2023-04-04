@@ -29,23 +29,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
  12 .ARM.attributes 00000030  00000000  00000000  00020010  2**0
                   CONTENTS, READONLY
- 13 .debug_info   0000c67d  00000000  00000000  00020040  2**0
+ 13 .debug_info   0000c689  00000000  00000000  00020040  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 14 .debug_abbrev 00001a6e  00000000  00000000  0002c6bd  2**0
+ 14 .debug_abbrev 00001a7d  00000000  00000000  0002c6c9  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_aranges 00000988  00000000  00000000  0002e130  2**3
+ 15 .debug_aranges 00000988  00000000  00000000  0002e148  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_ranges 000008e0  00000000  00000000  0002eab8  2**3
+ 16 .debug_ranges 000008e0  00000000  00000000  0002ead0  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_macro  0001a810  00000000  00000000  0002f398  2**0
+ 17 .debug_macro  0001a810  00000000  00000000  0002f3b0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_line   0000d3a5  00000000  00000000  00049ba8  2**0
+ 18 .debug_line   0000d3a5  00000000  00000000  00049bc0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    0009b447  00000000  00000000  00056f4d  2**0
+ 19 .debug_str    0009b435  00000000  00000000  00056f65  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000050  00000000  00000000  000f2394  2**0
+ 20 .comment      00000050  00000000  00000000  000f239a  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  00002944  00000000  00000000  000f23e4  2**2
+ 21 .debug_frame  00002944  00000000  00000000  000f23ec  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1064,9 +1064,9 @@ int main(void)
   /* USER CODE BEGIN 2 */
   compass_init();
  8000c22:	f7ff ff9f 	bl	8000b64 <compass_init>
-    /* USER CODE BEGIN 3 */
 	  uint16_t x,y,z;
 	  uint16_t t;
+	  uint8_t abc;
 
 
 	  compass_read(&x,&y,&z);
